@@ -1,0 +1,805 @@
+@import url('../index/fonts.css');
+
+
+/*----------- General Styles -----------*/
+body{
+    background: var(--white);
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --pink: #fc928b;
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
+/*------X----- General Styles ----X-------*/
+
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Anton);
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 2rem;
+}
+
+button.btn{
+    border: none;
+    padding: .87rem 3rem;
+    font-size: 1.2rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    background-color: var(--pink);
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0rem;
+}
+/* ------x------- Global Classes -------x-------*/
+
+/*---------------- Navigation Styles ------------*/
+
+.navbar{
+    background: var(--white);
+    border: none;
+}
+
+.navbar .container{
+    border-bottom: 2px solid var(--pink);
+}
+
+.navbar .navbar-collapse .right{
+    float: right;
+}
+.navbar .navbar-brand h4.hidden-xs{
+    font-size: 3rem;
+    display: block;
+    font-family: var(--Lexend);
+    color: var(--pink);
+}
+
+.navbar .navbar-brand h4.visible-xs{
+    font-size: 2rem;
+    display: block;
+    font-family: var(--Lexend);
+    color: var(--pink);
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus{
+    text-decoration: none;
+}
+
+.navbar ul.nav{
+    margin: 0;
+    width: 70%;
+    padding-left: 7.5rem;
+}
+
+.navbar ul.nav li{
+    padding: 1.6rem 1rem;
+    font-size: 1.4rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+
+.navbar ul.nav li.active a{
+    background-color: var(--white) !important;
+    color: var(--pink) !important;
+}
+
+.navbar ul.nav > li > a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+}
+.navbar ul.nav > li > a:hover{
+    color: var(--pink);
+}
+
+.navbar .navbar-collapse a.btn{
+    margin: 2.2rem 0;
+    font-size: 1.4rem;
+    position: relative;
+    font-family: var(--Abel);
+    width: 8%;
+    background: var(--pink);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--white);
+}
+
+.navbar-collapse button.btn-search{
+    margin:  3rem 0;
+    font-size: 1.6rem;
+    background: none !important;
+    color: #000000;
+    outline: none !important;
+    border: none !important;
+}
+
+#search .navbar-form{
+    float: right;
+}
+
+#search{
+    clear: both;
+    text-align: right;
+}
+#search .navbar-form .input-group{
+    display: table;
+}
+
+#search .navbar-form .input-group input[type=text]{
+    box-shadow: none !important;
+    border-color: var(--pink);
+}
+
+button.btn-primary:hover{
+    background: var(--bg-color);
+}
+#search .navbar-form .input-group input[type=text]::placeholder{
+    color: #cccccc !important;
+}
+#search .navbar-form .input-group .form-control{
+    width: 100%;
+}
+
+/*-------X-------- Navigation Styles ------X-----*/
+
+/*---------------- Blog slider Styles ------------*/
+#slider span.glyphicon{
+    border:  2px solid var(--white);
+    width: 5rem !important;
+    height: 5rem !important;
+    padding-top: .5rem;
+}
+
+#slider .carousel-inner .item img{
+    width: 100%;
+}
+
+#slider .blog-title{
+    position: absolute;
+    width: 97.5%;
+    text-align: center;
+    margin-top: -15rem;
+    color: var(--white);
+}
+
+#slider .blog-title h1{
+    letter-spacing: .3rem;
+    font-size: 5rem;
+    word-spacing: .5rem;
+}
+
+/*--------X------- Blog slider Styles -----X------*/
+
+/*---------------- Blog Lifestyle Styles ------------*/
+#lifestyle{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#lifestyle .container{
+    width: 80%;
+}
+
+#lifestyle .container .box{
+    background: var(--pink);
+}
+
+#lifestyle .container .box .lifestyle-image{
+    overflow: hidden;
+}
+
+#lifestyle .container .box .lifestyle-image img{
+    transition: all 1s ease;
+}
+
+#lifestyle .container .box .lifestyle-image img:hover{
+    transform: scale(1.1);
+}
+
+#lifestyle .container .box h3{
+    text-align: center;
+    margin: auto;
+    padding: 1.1rem 0;
+    text-transform: uppercase;  
+}
+
+#lifestyle .container .box h3 a{
+    color: var(--white);
+    font-weight: 500;
+}
+/*--------X------- Blog Lifestyle Styles ----X-------*/
+
+/*---------------- Blog Content one Styles ------------*/
+#blog-content .post-info{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#blog-content .post-info h4{
+    color: var(--pink);
+    line-height: .5rem;
+}
+
+#blog-content .post-info h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#blog-content .post-content{
+    width: 100%;
+}
+
+#blog-content .post-content > .post-image, .post-text{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+#blog-content .post-content > .post-image{
+    overflow: hidden !important;
+}
+
+#blog-content .post-content > .post-image img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+#blog-content .post-content > .post-image img:hover{
+    transform: scale(1.1);
+}
+
+#blog-content .post-content .post-text p{
+    text-align: left !important;
+}
+
+/*-----sidebar one-------*/
+.sidebar{
+    padding-top: 10rem;
+}
+
+/*-----About me-------*/
+.sidebar .box,
+.sidebar-2 .box{
+    text-align: center;
+    background: #fcfafa;
+    border: 1px solid #cccccc;
+}
+
+.sidebar .box .title,
+.sidebar-2 .box .title{
+    background: var(--pink);
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+
+.sidebar .box .title h3 a{
+    color: var(--white);
+    font-weight: 500;
+}
+
+.sidebar .box .lifestyle-image{
+    width: 80%;
+    margin: auto;
+    padding: 2.5rem 0;
+}
+
+.sidebar .box .post-text a{
+    color: var(--pink);
+    text-transform: uppercase;
+}
+
+.sidebar .box .post-text p{
+    margin-top: -1.7rem;
+}
+/*--X---About me---X----*/
+
+/*-----Newsletter-------*/
+.newsletter{
+margin: 1.5rem 0;
+}
+
+.newsletter .box{
+    text-align: center;
+    background: #fcfafa;
+    border: 1px solid #cccccc;
+}
+
+.newsletter .box .title h3 a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+.newsletter .box .title p{
+    font-size: 1.1rem;
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.newsletter .box .input-group{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.newsletter .box .input-group form input[type=text]{
+    box-shadow: none;
+    border: 1px solid #cccccc;
+
+}
+
+.newsletter .box .input-group form input[type=text]::placeholder{
+    color: #cccccc;
+    font-size: 1.2rem;
+}
+
+.newsletter .box .input-group form .btn{
+    width: 100%;
+    margin: 1rem 0;
+}
+/*---X--Newsletter----X---*/
+/*--X--sidebar one---X---*/
+/*--------X------- Blog Content one Styles -----X------*/
+
+/*---------------- Blog Content two Styles ------------*/
+.post-content .p-text{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.post-content .p-text button.btn{
+    font-size: 1.5rem;
+    color: var(--text-light);
+    background: transparent;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+
+/*-----sidebar two-------*/
+.sidebar-2 .latest-post{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2.3rem 0;
+}
+
+.sidebar-2 .latest-post a img{
+    height: 60px;
+    object-fit: cover;
+    padding-left: 2rem;
+}
+
+.sidebar-2 .latest-post .post-info{
+    width: 200px;
+    height: 80px;
+    margin-top: -1rem;
+}
+
+.sidebar-2 .latest-post h2{
+    font-size: 1rem !important;
+    text-align: left;
+    padding-left: .7rem;
+}
+
+.sidebar-2 .latest-post .post-info span{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: .5rem;
+}
+
+.sidebar-2 .latest-post .post-info span h4{
+    font-size: 1rem;
+    padding-left: .8rem;
+}
+
+.sidebar-2 .latest-post .post-info span p{
+    font-size: .8rem;
+    padding: .8rem 2rem 0 0;
+}
+/*------X--------- Blog Content two Styles -----X------*/
+
+/*---------------- Blog Social Styles ------------*/
+.social{
+    padding: 2rem 0;
+}
+
+.social .social-items,
+.social .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social .follow{
+    width: 15%;
+    background: var(--pink);
+    padding: .7rem 0;
+    text-align: center;
+    position: absolute;
+    margin-top: 12rem;
+    z-index: 1;
+}
+
+.social .follow h4 a,
+.social .follow i{
+    color: var(--white);
+    font-weight: 500;
+}
+/*--------X------- Blog Social Styles -----X------*/
+
+/*---------------- Footer Styles ------------*/
+footer{
+    padding: 1.1rem 0;
+}
+
+/*-----About me-------*/
+#footer .box{
+    background: #fcfafa;
+    padding: 1.1rem 0;
+}
+
+#footer .box .title{
+    border-bottom: 1px solid var(--pink);
+    text-transform: uppercase;
+}
+
+#footer .box .title h3 a{
+    font-weight: 1000;
+    color: #000000;
+}
+
+#footer .box .lifestyle-image{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+#footer .box .text{
+    width: 100%;
+}
+/*--X---About me---X----*/
+
+/*------Latest Post--------*/
+#footer .latest-post{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2.3rem 0;
+}
+
+#footer .latest-post a{
+    width: 100px;
+    height: 60px;
+}
+
+#footer .latest-post a img{
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    padding-left: 2rem;
+}
+
+#footer .latest-post .post-info{
+    width: 200px;
+    height: 80px;
+    margin-top: -1rem;
+}
+
+#footer .latest-post h2{
+    font-size: 1.3rem !important;
+    font-weight: bold;
+    text-align: left;
+    padding-left: .7rem;
+    text-transform: uppercase;
+}
+
+#footer .latest-post .post-info span{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: .5rem;
+}
+
+#footer .latest-post .post-info span h4{
+    font-size: 1.1rem;
+    padding-left: .8rem;
+    text-transform: uppercase;
+    color: var(--pink);
+}
+
+#footer .latest-post .post-info span p{
+    font-size: 1rem;
+    padding: 1.3rem 2rem 0 0;
+}
+/*--X---Latest Post---X----*/
+
+/*  Copyright Styles  */
+#copyright{
+    border-top: 1px solid var(--pink);
+    color: #cccccc;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    font-size: 1.1rem;
+}
+
+#copyright .pull-right a{
+    margin: 0 1.1rem;
+    text-transform: uppercase; 
+}
+
+#copyright .pull-right a span{
+    padding: .5rem .7rem;
+    background-color: var(--pink);
+    border-radius: 2rem;
+}
+
+#copyright .pull-right a span.facebook{
+    padding: .5rem .9rem;
+}
+
+#copyright .pull-right a i{
+    color: var(--white);
+}
+/*--------X------- Footer Styles -----X------*/
+
+/*-------------Viewport less then or equal to 1130px-----------*/
+@media only screen and (max-width: 1130px){
+    .navbar ul.nav{
+        width: 70%;
+        padding-left: 1rem;
+    }
+}
+/*--------X-----Viewport less then or equal to 1130px-------X----*/
+
+/*-------------Viewport less then or equal to 1000px-----------*/
+@media only screen and (max-width: 1000px){
+    .navbar ul.nav{
+        width: 70%;
+        padding-left: 1rem;
+    }
+
+    .navbar ul.nav li{
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .navbar .navbar-brand h4.hidden-xs{
+        font-size: 2.1rem;
+    }
+    
+    .navbar .navbar-collapse a.btn{
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        width: 9%;
+    }
+
+    .navbar-collapse button.btn-search{
+        margin:  2.4rem 0;
+        font-size: 1.6rem;
+    }
+
+    #slider .blog-title{
+        margin-top: -14rem;
+    }
+
+    #slider .blog-title h1{
+        font-size: 4rem;
+    }
+
+    .sidebar .box .title,
+    .sidebar-2 .box .title{
+        padding: .1rem 0;
+    }
+
+    .sidebar .box .title h3 a,
+    .newsletter .box .title h3 a{
+        font-size: 1.5rem;
+    }
+
+    .sidebar .box .post-text p{
+        font-size: 1.1rem;
+    }
+
+    .sidebar .box .post-text a{
+        font-size: 1.2rem;
+    }
+    
+    .newsletter .box .post-text{
+        margin-top: -2rem;
+    }
+    .newsletter .box .post-text p{
+        font-size: 1.1rem;
+    }
+
+    .newsletter .box .title p{
+        font-size: 1rem;
+        padding: .2rem 0;
+    }
+
+    .post-content .post-info h4{
+        font-size: 1.5rem;
+    }
+
+    .post-content .post-info h2{
+        font-size: 1.5rem !important;
+    }
+
+    .post-content .post-info span{
+        font-size: 1rem;
+    }
+    
+    .post-content .p-text button.btn{
+        font-size: 1.3rem;
+    }
+
+    .sidebar-2 .box .title h3 a{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .sidebar-2 .latest-post{
+        padding: 1.2rem 0;
+    }
+    .sidebar-2 .latest-post a img{
+        height: 50px;
+    }
+
+    .sidebar-2 .latest-post h2{
+        font-size: 1rem !important;
+        float: left;
+    }
+
+    .sidebar-2 .latest-post a img{
+        padding-left: .2rem;
+    }
+    
+    .sidebar-2 .latest-post .post-info span p,
+    .sidebar-2 .latest-post .post-info span h4{
+        display: none;
+    }
+
+    .social .follow{
+        width: 20%;
+        margin-top: 7rem;
+    }
+
+    #footer .latest-post a{
+        width: 200px;
+        height: 100px;
+    }
+
+    #footer .latest-post a img{
+        height: 100px;
+    }
+
+    #footer .latest-post .post-info{
+        width: 300px
+    }
+
+    #footer .latest-post h2{
+        font-size: 2rem !important;
+    }
+
+    #footer .latest-post .post-info span h4{
+        font-size: 1.6rem;
+    }
+
+    #footer .latest-post .post-info span p{
+        font-size: 1.2rem;
+    }
+}
+
+/*--------X----Viewport less then or equal to 1000px------X----*/
+
+
+/*------------Viewport less then or equal to 750px------------*/
+
+@media only screen and (max-width: 750px){
+    .navbar .navbar-brand h4.visible-xs{
+        font-size: 2.1rem;
+        padding: 0 1rem;
+        margin-top: 0;
+    }
+
+    .navbar .navbar-collapse a.btn{
+        margin-left: 2rem;
+        font-size: 1.3rem;
+        width: 15%;
+    }
+
+    #slider .blog-title{
+        margin-top: -10rem;
+    }
+
+    #slider .blog-title h1{
+        font-size: 3rem;
+    }
+
+    .sidebar{
+        margin-top: -6rem !important;
+    }
+    
+    .social .follow{
+        width: 30%;
+        margin-top: 3.2rem;
+    }
+
+    #copyright{
+        font-size: .9rem;
+    }
+    
+    #copyright .pull-right a,
+    #copyright .pull-right a i{
+        font-size: .8rem;
+    }
+
+    #copyright .pull-right a{
+        margin: 0 .5rem;
+    }
+}
+
+/*------X------Viewport less then or equal to 750px-------X-----*/
+
+
+/*-----------Viewport less then or equal to 520px--------------*/
+
+@media only screen and (max-width: 520px){
+    
+
+}
+
+/*------X----Viewport less then or equal to 520px------X-------*/
