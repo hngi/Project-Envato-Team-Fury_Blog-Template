@@ -78,6 +78,11 @@ body{
 	display: none;
 }
 
+#dropdownNav{
+		display:none;
+	}
+	
+
 #about .container .section-head{
 	background-image: url(./images/about_author_backgd.png);
 	background-repeat: no-repeat;
