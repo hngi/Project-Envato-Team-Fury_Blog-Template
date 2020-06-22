@@ -461,6 +461,9 @@ textarea.input100 {
 
   background: #f1868a;
 }
+
+/* NAVBAR BRAND STYLES */
+
 .navbar-brand {
   font-size: 25px;
 
@@ -471,7 +474,8 @@ textarea.input100 {
   line-height: 44px;
   color: #f1868a !important;
 }
-/* footer */
+
+/* FOOTER STYLES */
 
 .ftco-vh-100 {
   height: 100vh;
